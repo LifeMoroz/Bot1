@@ -5,7 +5,7 @@ import requests
 import json
 
 import time
-
+from local_settings import POST_HEADERS, HEADERS
 
 LONGPOLLING_TIMEOUT = 25
 MENU_ITEMS = ["armorHead", "armorLegs", "armorBoots", "armorBody", "closeRangeWeapon"]
