@@ -3644,3 +3644,989 @@ Profit: 1421850.8199999998
 ****************END CYCLE****************
 ****************NEW CYCLE****************
 {'error': 1, 'setFlash': [{'class': 'flash_error', 'msg': 'not_last_session'}]}
+****************NEW CYCLE****************
+Type          Buy   BEST    
+Руда            315 365.00  
+Уголь           105 110.00  
+Опилки          105 114.00  
+Бревно          210 245.00  
+Хлопок          105 118.00  
+Драг. руда      420 480.00  
+Шкура           210 220.00  
+Драг. камни     525 899.00  
+****************NEW CYCLE****************
+Type          Buy   BEST    
+Руда            360 365.50  
+Драг. руда      480 480.00  
+Опилки          120 114.00  
+Шкура           240 220.00  
+Драг. камни     600 899.00  
+Уголь           120 110.00  
+Хлопок          120 118.00  
+Бревно          240 245.00  
+****************NEW CYCLE****************
+Type          Buy   BEST    
+Уголь           120 110.00  
+Драг. камни     600 899.00  
+Шкура           240 220.00  
+Руда            360 365.50  
+Опилки          120 114.00  
+Драг. руда      480 480.00  
+Бревно          240 245.00  
+Хлопок          120 118.00  
+****************NEW CYCLE****************
+Type          Buy   BEST    
+Шкура           240 220.00  
+Опилки          120 114.00  
+Бревно          240 245.00  
+Драг. камни     600 899.00  
+Уголь           120 110.00  
+Хлопок          120 118.00  
+Драг. руда      480 480.00  
+Руда            360 365.50  
+****************NEW CYCLE****************
+****************NEW CYCLE****************
+****************NEW CYCLE****************
+****************NEW CYCLE****************
+****************NEW CYCLE****************
+****************NEW CYCLE****************
+****************NEW CYCLE****************
+****************NEW CYCLE****************
+****************NEW CYCLE****************
+****************NEW CYCLE****************
+****************NEW CYCLE****************
+****************NEW CYCLE****************
+****************NEW CYCLE****************
+****************NEW CYCLE****************
+****************NEW CYCLE****************
+****************NEW CYCLE****************
+****************NEW CYCLE****************
+****************NEW CYCLE****************
+****************NEW CYCLE****************
+****************NEW CYCLE****************
+****************NEW CYCLE****************
+****************NEW CYCLE****************
+****************NEW CYCLE****************
+****************NEW CYCLE****************
+{'currentLevel': 42, 'userLevel': 42, 'title_for_layout': 'LifeMoroz, VirCities - город твоей мечты', 'setFlash': [{'msg': 'WRONG_SLOT', 'class': 'flash_error'}], 'locale': 'rus', 'error': 1, 'infos': {'user_id': 63563, 'city_id': 3, 'lang': 'ru'}, 'userContext': {'username': 'LifeMoroz', 'male   ': True}, 'userId': 63563, 'inFightInfo': None}
+{'infos': {'city_id': 3, 'lang': 'ru', 'user_id': 63563}, 'error': 1, 'setFlash': [{'msg': 'Произошла ошибка', 'class': 'flash_error'}], 'title_for_layout': 'LifeMoroz, VirCities - город твоей мечты', 'locale': 'rus', 'inFightInfo': None, 'userContext': {'male   ': True, 'username': 'LifeMoroz'}, 'userId': 63563, 'currentLevel': 42, 'userLevel': 42}
+Put on:  head_inventory
+Put on:  pants_inventory
+Put on:  torso_inventory
+Put on:  first_weapon_inventory
+Put on:  boots_inventory
+Put on:  boots_inventory
+Put on:  first_weapon_inventory
+Put on:  torso_inventory
+Put on:  pants_inventory
+Spend: None
+Earned: 0
+Got damage:  0
+Earned: 110265
+Got damage:  0
+Earned: 63697
+Got damage:  0
+Earned: 149339
+Got damage:  0
+Earned: 73867
+Got damage:  0
+Earned: 58344
+Got damage:  0
+Earned: 88854
+Got damage:  -84
+hp: 181/265
+Earned: 146663
+Got damage:  -84
+hp: 181/265
+Trauma: _ht
+Earned: 153622
+Got damage:  0
+Earned: 73332
+Got damage:  0
+Earned: 110265
+Got damage:  -84
+hp: 181/265
+Earned: 123647
+Got damage:  0
+Earned: 94207
+Got damage:  0
+Trauma: _lt
+Earned: 157500
+Got damage:  0
+Earned: 112406
+Got damage:  -84
+hp: 181/265
+Trauma: _mt
+Earned: 112941
+Got damage:  -84
+hp: 181/265
+Earned: 133281
+Got damage:  0
+Earned: 112941
+Got damage:  0
+Earned: 87784
+Items were broken =(
+Spend: None
+Earned: 1962955.0
+WTB: JimmySet Vest x1
+WTB: JimmySet Helmet x1
+WTB: JimmySet Boots x1
+WTB: JimmySet Vest x1
+WTB: JimmySet Helmet x1
+WTB: JimmySet Pants x1
+WTB: Jimmy medium x1
+WTB: Jimmy medium x1
+Put on:  head_inventory
+Put on:  boots_inventory
+Put on:  second_weapon_inventory
+Put on:  torso_inventory
+Put on:  pants_inventory
+Put on:  head_inventory
+Put on:  boots_inventory
+Put on:  second_weapon_inventory
+Put on:  torso_inventory
+Put on:  pants_inventory
+Got damage:  0
+Earned: 83435
+Got damage:  -265
+hp: 0/265
+WE lost it :(
+Got damage:  -168
+hp: 97/265
+Earned: 47212
+Got damage:  -168
+hp: 97/265
+Earned: 106634
+Got damage:  -168
+hp: 97/265
+Earned: 101165
+Got damage:  0
+Earned: 157500
+Got damage:  -84
+hp: 181/265
+Earned: 60485
+Got damage:  0
+Earned: 72796
+Got damage:  0
+Earned: 106518
+Got damage:  0
+Earned: 135422
+Got damage:  0
+Earned: 103306
+Got damage:  -84
+hp: 181/265
+Earned: 95813
+Got damage:  -84
+hp: 181/265
+Earned: 79219
+Got damage:  0
+Earned: 69049
+Got damage:  0
+Earned: 94207
+Got damage:  -168
+hp: 97/265
+Earned: 131140
+Got damage:  0
+Earned: 151480
+Got damage:  0
+Earned: 116688
+Got damage:  -84
+hp: 181/265
+Earned: 58879
+Got damage:  -84
+hp: 181/265
+Earned: 117223
+Got damage:  -84
+hp: 186/265
+Trauma: _lt
+Earned: 153086
+Got damage:  0
+Earned: 66373
+Got damage:  -84
+hp: 181/265
+Earned: 131140
+Got damage:  -84
+hp: 181/265
+Earned: 67444
+Got damage:  0
+Earned: 58344
+Got damage:  -84
+hp: 181/265
+Earned: 54062
+Got damage:  0
+Earned: 156833
+Got damage:  0
+Trauma: _ht
+Earned: 62091
+Got damage:  0
+Earned: 94207
+Got damage:  0
+Earned: 123111
+Items were broken =(
+Finished by count=(
+Earned: 2854862.0
+WTB: JimmySet Helmet x1
+WTB: JimmySet Pants x1
+WTB: JimmySet Vest x1
+WTB: JimmySet Boots x1
+WTB: Jimmy medium x1
+WTB: Jimmy medium x1
+hp: 191/265
+Got damage:  0
+Earned: 113400
+Got damage:  0
+Earned: 141912
+Got damage:  0
+Earned: 127008
+Got damage:  0
+Earned: 64800
+Got damage:  0
+Trauma: _lt
+Earned: 69984
+Got damage:  -84
+hp: 181/265
+Earned: 97848
+Got damage:  0
+Trauma: _ht
+Earned: 97200
+Got damage:  0
+Earned: 96552
+Got damage:  0
+Earned: 103680
+Got damage:  0
+Earned: 82944
+Items were broken =(
+Put on:  torso_inventory
+Put on:  second_weapon_inventory
+Put on:  head_inventory
+Put on:  boots_inventory
+Put on:  pants_inventory
+Put on:  torso_inventory
+Put on:  second_weapon_inventory
+Put on:  head_inventory
+Put on:  boots_inventory
+Put on:  pants_inventory
+Earned: 995328.0
+Got damage:  -84
+hp: 181/265
+Earned: 132192
+Got damage:  0
+Trauma: _mt
+Earned: 72576
+Got damage:  0
+Earned: 69984
+Got damage:  0
+Earned: 100440
+Got damage:  -84
+hp: 181/265
+Earned: 66096
+Got damage:  0
+Earned: 157500
+Got damage:  -84
+hp: 181/265
+Earned: 144504
+Got damage:  0
+Earned: 133488
+Items were broken =(
+Finished by count=(
+Check strength of items in set
+Got damage:  0
+Earned: 81361
+Got damage:  0
+Earned: 157500
+Got damage:  -84
+hp: 181/265
+Earned: 147198
+Got damage:  0
+Earned: 157500
+Got damage:  -84
+hp: 181/265
+Earned: 76543
+Got damage:  0
+Earned: 143451
+Got damage:  0
+Earned: 93672
+Got damage:  -84
+hp: 181/265
+Earned: 63697
+Got damage:  -84
+hp: 181/265
+Trauma: _lt
+Earned: 79219
+Got damage:  0
+Earned: 149339
+Got damage:  -168
+hp: 97/265
+Trauma: _ht
+Earned: 116153
+Got damage:  0
+Trauma: _mt
+Earned: 73867
+Got damage:  0
+Earned: 57274
+Got damage:  0
+Earned: 110265
+Got damage:  -84
+hp: 181/265
+Earned: 141310
+Got damage:  0
+Earned: 150410
+Got damage:  0
+Earned: 117223
+Got damage:  -84
+hp: 181/265
+Earned: 68514
+Got damage:  0
+Trauma: _ht
+Earned: 94742
+Got damage:  -84
+hp: 181/265
+Earned: 112941
+Items were broken =(
+Finished by count=(
+Earned: 2192179.0
+Got damage:  -84
+hp: 181/265
+Earned: 115082
+Got damage:  -84
+hp: 181/265
+Earned: 78684
+Got damage:  -168
+hp: 97/265
+Earned: 156833
+Got damage:  0
+Earned: 155763
+Got damage:  0
+Earned: 138634
+Got damage:  0
+Earned: 153622
+Got damage:  0
+Earned: 67979
+Got damage:  0
+Earned: 57809
+Got damage:  0
+Earned: 157368
+Got damage:  0
+Earned: 82966
+Items were broken =(
+Finished by count=(
+Earned: 1164740.0
+WTB: JimmySet Helmet x1
+WTB: JimmySet Pants x1
+WTB: JimmySet Boots x1
+WTB: Jimmy medium x1
+WTB: JimmySet Vest x1
+WTB: Jimmy medium x1
+Put on:  second_weapon_inventory
+Put on:  torso_inventory
+Put on:  head_inventory
+Put on:  pants_inventory
+Put on:  boots_inventory
+Put on:  second_weapon_inventory
+Put on:  torso_inventory
+Put on:  head_inventory
+Put on:  pants_inventory
+Put on:  boots_inventory
+WTB: Jimmy medium x1
+WTB: Jimmy medium x1
+WTB: JimmySet Vest x1
+WTB: JimmySet Helmet x1
+WTB: JimmySet Boots x1
+WTB: JimmySet Pants x1
+Put on:  second_weapon_inventory
+Put on:  second_weapon_inventory
+Put on:  torso_inventory
+Put on:  pants_inventory
+Put on:  head_inventory
+Put on:  boots_inventory
+Put on:  second_weapon_inventory
+Put on:  torso_inventory
+Put on:  pants_inventory
+Put on:  head_inventory
+Put on:  boots_inventory
+Put on:  second_weapon_inventory
+Put on:  second_weapon_inventory
+Put on:  head_inventory
+Put on:  pants_inventory
+Put on:  torso_inventory
+Put on:  boots_inventory
+Put on:  second_weapon_inventory
+Put on:  head_inventory
+Put on:  pants_inventory
+Put on:  torso_inventory
+Put on:  boots_inventory
+Put on:  boots_inventory
+Put on:  first_weapon_inventory
+Put on:  pants_inventory
+Put on:  head_inventory
+Put on:  torso_inventory
+Put on:  first_weapon_inventory
+Put on:  boots_inventory
+Put on:  head_inventory
+Put on:  pants_inventory
+Put on:  torso_inventory
+Put on:  second_weapon_inventory
+Put on:  boots_inventory
+Put on:  head_inventory
+Put on:  pants_inventory
+Put on:  torso_inventory
+Put on:  torso_inventory
+Put on:  second_weapon_inventory
+Put on:  head_inventory
+Put on:  boots_inventory
+Put on:  pants_inventory
+Put on:  torso_inventory
+Put on:  boots_inventory
+Put on:  second_weapon_inventory
+Put on:  pants_inventory
+Put on:  head_inventory
+Put on:  pants_inventory
+Put on:  second_weapon_inventory
+Put on:  head_inventory
+Put on:  torso_inventory
+Put on:  boots_inventory
+Put on:  second_weapon_inventory
+Put on:  torso_inventory
+Put on:  pants_inventory
+Put on:  boots_inventory
+Put on:  head_inventory
+Put on:  torso_inventory
+Put on:  torso_inventory
+Put on:  head_inventory
+Put on:  head_inventory
+Put on:  pants_inventory
+Put on:  pants_inventory
+Put on:  first_weapon_inventory
+Put on:  second_weapon_inventory
+Put on:  second_weapon_inventory
+Put on:  second_weapon_inventory
+Put on:  boots_inventory
+Put on:  boots_inventory
+Got damage:  -84
+hp: 181/265
+Earned: 77078
+Got damage:  0
+Trauma: _lt
+Earned: 83502
+Got damage:  -84
+hp: 181/265
+Earned: 152016
+Got damage:  0
+Earned: 115618
+Got damage:  -84
+hp: 181/265
+Earned: 83502
+Got damage:  0
+Earned: 116153
+Got damage:  -168
+hp: 97/265
+Earned: 157500
+Got damage:  -84
+hp: 181/265
+Earned: 95277
+Got damage:  -84
+hp: 181/265
+Earned: 117223
+Got damage:  0
+Earned: 88854
+Got damage:  0
+Earned: 157500
+Got damage:  -84
+hp: 181/265
+Earned: 118294
+Got damage:  0
+Trauma: _mt
+Earned: 58879
+Got damage:  0
+Earned: 61020
+Got damage:  0
+Earned: 84572
+Got damage:  -84
+hp: 181/265
+Earned: 144522
+Got damage:  0
+Earned: 110800
+Got damage:  0
+Earned: 102771
+Got damage:  0
+Earned: 73332
+Got damage:  0
+Earned: 82431
+Got damage:  0
+Earned: 120970
+Got damage:  0
+Earned: 135422
+Got damage:  0
+Earned: 69585
+Got damage:  0
+Earned: 94207
+Got damage:  0
+Trauma: _lt
+Earned: 80290
+Got damage:  -84
+hp: 181/265
+Earned: 109194
+Got damage:  0
+Earned: 55132
+Got damage:  0
+Earned: 132746
+Got damage:  0
+Earned: 58344
+Got damage:  0
+Earned: 106518
+Items were broken =(
+Finished by count=(
+Earned: 3043252.0
+Got damage:  -205
+hp: 0/205
+WE lost it :(
+Got damage:  -205
+hp: 0/205
+WE lost it :(
+Got damage:  -205
+hp: 0/205
+WE lost it :(
+Got damage:  -205
+hp: 0/205
+WE lost it :(
+Got damage:  -205
+hp: 0/205
+WE lost it :(
+Got damage:  -205
+hp: 0/205
+Trauma: _mt
+WE lost it :(
+Got damage:  -205
+hp: 0/205
+WE lost it :(
+Got damage:  -205
+hp: 0/205
+Trauma: _lt
+WE lost it :(
+Got damage:  -205
+hp: 0/205
+WE lost it :(
+Got damage:  -205
+hp: 0/205
+WE lost it :(
+Got damage:  -205
+hp: 0/205
+WE lost it :(
+Got damage:  -205
+hp: 0/205
+WE lost it :(
+Got damage:  -205
+hp: 0/205
+WE lost it :(
+Got damage:  -205
+hp: 0/205
+WE lost it :(
+Got damage:  -205
+hp: 0/205
+WE lost it :(
+Got damage:  -205
+hp: 0/205
+WE lost it :(
+Got damage:  -205
+hp: 0/205
+Trauma: _ht
+WE lost it :(
+Got damage:  -205
+Earned: 0
+Put on:  torso_inventory
+Put on:  pants_inventory
+Put on:  head_inventory
+Put on:  boots_inventory
+Put on:  second_weapon_inventory
+Put on:  second_weapon_inventory
+Put on:  torso_inventory
+Put on:  pants_inventory
+Put on:  head_inventory
+Put on:  boots_inventory
+Put on:  second_weapon_inventory
+Put on:  second_weapon_inventory
+Got damage:  -84
+hp: 181/265
+Earned: 57794
+Got damage:  -168
+hp: 97/265
+Earned: 61864
+Got damage:  -168
+hp: 97/265
+Earned: 59829
+Got damage:  -84
+hp: 181/265
+Earned: 55759
+Got damage:  -252
+hp: 13/265
+Trauma: _ht
+Earned: 59015
+Got damage:  -168
+hp: 97/265
+Earned: 51689
+Got damage:  -84
+hp: 181/265
+Earned: 91575
+Got damage:  -84
+hp: 181/265
+Earned: 79772
+Got damage:  -84
+hp: 181/265
+Earned: 88726
+Got damage:  -168
+hp: 97/265
+Earned: 63492
+Got damage:  -84
+hp: 181/265
+Earned: 107855
+Got damage:  -168
+hp: 97/265
+Earned: 48840
+Got damage:  -84
+hp: 181/265
+Earned: 107041
+Got damage:  -84
+hp: 181/265
+Trauma: _lt
+Earned: 52910
+Got damage:  -168
+hp: 97/265
+Earned: 50061
+Got damage:  -84
+hp: 181/265
+Earned: 100936
+Got damage:  -265
+hp: 0/265
+WE lost it :(
+Got damage:  -252
+hp: 13/265
+Trauma: _lt
+Earned: 97273
+Got damage:  -84
+hp: 181/265
+Trauma: _mt
+Earned: 103378
+Got damage:  -84
+hp: 181/265
+Earned: 74481
+Got damage:  -84
+hp: 181/265
+Earned: 84249
+Got damage:  0
+Earned: 48433
+Got damage:  -84
+hp: 181/265
+Earned: 112739
+Got damage:  0
+Earned: 100936
+Got damage:  -84
+hp: 181/265
+Earned: 100529
+Got damage:  -84
+hp: 181/265
+Earned: 49654
+Got damage:  -84
+hp: 181/265
+Trauma: _ht
+Earned: 55759
+Got damage:  -84
+hp: 181/265
+Earned: 74888
+Got damage:  -84
+hp: 181/265
+Earned: 74481
+Got damage:  0
+Earned: 101750
+Items were broken =(
+Finished by count=(
+Earned: 2215708.0
+{'setFlash': [{'msg': 'У пользователя нет такого предмета', 'class': 'flash_error'}], 'title_for_layout': 'LifeMoroz, VirCities - город твоей мечты', 'error': 1, 'currentLevel': 42, 'userContext': {'username': 'LifeMoroz', 'male   ': True}, 'locale': 'rus', 'userLevel': 42, 'infos': {'city_id': 3, 'user_id': 63563, 'lang': 'ru'}, 'userId': 63563, 'inFightInfo': None}
+Put "torso_inventory" FAILED
+{'setFlash': [{'msg': 'У пользователя нет такого предмета', 'class': 'flash_error'}], 'title_for_layout': 'LifeMoroz, VirCities - город твоей мечты', 'error': 1, 'currentLevel': 42, 'userContext': {'username': 'LifeMoroz', 'male   ': True}, 'locale': 'rus', 'userLevel': 42, 'infos': {'city_id': 3, 'user_id': 63563, 'lang': 'ru'}, 'userId': 63563, 'inFightInfo': None}
+Put "pants_inventory" FAILED
+{'setFlash': [{'msg': 'У пользователя нет такого предмета', 'class': 'flash_error'}], 'title_for_layout': 'LifeMoroz, VirCities - город твоей мечты', 'error': 1, 'currentLevel': 42, 'userContext': {'username': 'LifeMoroz', 'male   ': True}, 'locale': 'rus', 'userLevel': 42, 'infos': {'city_id': 3, 'user_id': 63563, 'lang': 'ru'}, 'userId': 63563, 'inFightInfo': None}
+Put "head_inventory" FAILED
+{'setFlash': [{'msg': 'У пользователя нет такого предмета', 'class': 'flash_error'}], 'title_for_layout': 'LifeMoroz, VirCities - город твоей мечты', 'error': 1, 'currentLevel': 42, 'userContext': {'username': 'LifeMoroz', 'male   ': True}, 'locale': 'rus', 'userLevel': 42, 'infos': {'city_id': 3, 'user_id': 63563, 'lang': 'ru'}, 'userId': 63563, 'inFightInfo': None}
+Put "boots_inventory" FAILED
+Put on:  second_weapon_inventory
+{'setFlash': [{'msg': 'У пользователя нет такого предмета', 'class': 'flash_error'}], 'title_for_layout': 'LifeMoroz, VirCities - город твоей мечты', 'error': 1, 'currentLevel': 42, 'userContext': {'username': 'LifeMoroz', 'male   ': True}, 'locale': 'rus', 'userLevel': 42, 'infos': {'city_id': 3, 'user_id': 63563, 'lang': 'ru'}, 'userId': 63563, 'inFightInfo': None}
+Put "second_weapon_inventory" FAILED
+{'setFlash': [{'msg': 'У пользователя нет такого предмета', 'class': 'flash_error'}], 'title_for_layout': 'LifeMoroz, VirCities - город твоей мечты', 'error': 1, 'currentLevel': 42, 'userContext': {'username': 'LifeMoroz', 'male   ': True}, 'locale': 'rus', 'userLevel': 42, 'infos': {'city_id': 3, 'user_id': 63563, 'lang': 'ru'}, 'userId': 63563, 'inFightInfo': None}
+Put "torso_inventory" FAILED
+{'setFlash': [{'msg': 'У пользователя нет такого предмета', 'class': 'flash_error'}], 'title_for_layout': 'LifeMoroz, VirCities - город твоей мечты', 'error': 1, 'currentLevel': 42, 'userContext': {'username': 'LifeMoroz', 'male   ': True}, 'locale': 'rus', 'userLevel': 42, 'infos': {'city_id': 3, 'user_id': 63563, 'lang': 'ru'}, 'userId': 63563, 'inFightInfo': None}
+Put "pants_inventory" FAILED
+{'setFlash': [{'msg': 'У пользователя нет такого предмета', 'class': 'flash_error'}], 'title_for_layout': 'LifeMoroz, VirCities - город твоей мечты', 'error': 1, 'currentLevel': 42, 'userContext': {'username': 'LifeMoroz', 'male   ': True}, 'locale': 'rus', 'userLevel': 42, 'infos': {'city_id': 3, 'user_id': 63563, 'lang': 'ru'}, 'userId': 63563, 'inFightInfo': None}
+Put "head_inventory" FAILED
+{'setFlash': [{'msg': 'У пользователя нет такого предмета', 'class': 'flash_error'}], 'title_for_layout': 'LifeMoroz, VirCities - город твоей мечты', 'error': 1, 'currentLevel': 42, 'userContext': {'username': 'LifeMoroz', 'male   ': True}, 'locale': 'rus', 'userLevel': 42, 'infos': {'city_id': 3, 'user_id': 63563, 'lang': 'ru'}, 'userId': 63563, 'inFightInfo': None}
+Put "boots_inventory" FAILED
+Put on:  second_weapon_inventory
+{'setFlash': [{'msg': 'У пользователя нет такого предмета', 'class': 'flash_error'}], 'title_for_layout': 'LifeMoroz, VirCities - город твоей мечты', 'error': 1, 'currentLevel': 42, 'userContext': {'username': 'LifeMoroz', 'male   ': True}, 'locale': 'rus', 'userLevel': 42, 'infos': {'city_id': 3, 'user_id': 63563, 'lang': 'ru'}, 'userId': 63563, 'inFightInfo': None}
+Put "second_weapon_inventory" FAILED
+Got damage:  0
+Trauma: _lt
+Earned: 14793
+Got damage:  -205
+hp: 0/205
+WE lost it :(
+Got damage:  0
+Trauma: _mt
+Earned: 18391
+Got damage:  -140
+hp: 65/205
+Earned: 14926
+Earned: 48110.0
+WTB: Jimmy medium x1
+WTB: JimmySet Pants x1
+WTB: Jimmy medium x1
+WTB: JimmySet Helmet x1
+WTB: JimmySet Boots x1
+WTB: JimmySet Vest x1
+Put on:  second_weapon_inventory
+Put on:  second_weapon_inventory
+Put on:  boots_inventory
+Put on:  head_inventory
+Put on:  pants_inventory
+Put on:  torso_inventory
+Got damage:  0
+Earned: 69190
+Got damage:  -168
+hp: 97/265
+Earned: 91982
+Got damage:  0
+Earned: 47212
+Got damage:  0
+Earned: 112739
+Got damage:  0
+Earned: 87505
+Earned: 408628.0
+Spend: 2599994.21
+Profit: -2191366.21
+WTB: Jimmy medium x1
+WTB: JimmySet Pants x1
+WTB: Jimmy medium x1
+WTB: JimmySet Helmet x1
+WTB: JimmySet Boots x1
+WTB: JimmySet Vest x1
+Got damage:  -84
+hp: 181/265
+Earned: 108659
+Got damage:  0
+Earned: 144522
+Got damage:  0
+Earned: 141846
+Got damage:  0
+Earned: 80290
+Got damage:  0
+Earned: 150945
+Got damage:  -84
+hp: 186/265
+Trauma: _ht
+Earned: 74402
+Got damage:  -84
+hp: 181/265
+Earned: 58879
+Got damage:  0
+Trauma: _mt
+Earned: 85643
+Got damage:  -168
+hp: 97/265
+Earned: 87248
+Got damage:  -84
+hp: 181/265
+Earned: 132746
+Got damage:  0
+Earned: 108124
+Got damage:  0
+Earned: 132746
+Got damage:  -84
+hp: 181/265
+Earned: 122041
+Got damage:  0
+Earned: 69049
+Got damage:  -84
+hp: 181/265
+Earned: 92066
+Got damage:  0
+Earned: 78149
+Got damage:  0
+Earned: 57274
+Got damage:  0
+Earned: 84572
+Got damage:  0
+Earned: 134887
+Got damage:  0
+Earned: 128464
+Got damage:  0
+Earned: 59415
+Got damage:  0
+Trauma: _lt
+Earned: 82966
+Got damage:  0
+Earned: 128999
+Got damage:  0
+Earned: 150410
+Got damage:  -84
+hp: 181/205
+Earned: 117223
+Items were broken =(
+Finished by count=(
+Earned: 2611565.0
+Spend: 2619995.2
+Profit: -8430.200000000186
+WTB: JimmySet Pants x1
+{'inFightInfo': None, 'infos': {'user_id': 63563, 'lang': 'ru', 'city_id': 3}, 'locale': 'rus', 'title_for_layout': 'LifeMoroz, VirCities - город твоей мечты', 'userLevel': 43, 'setFlash': [{'msg': 'Произошла ошибка', 'class': 'flash_error'}], 'userContext': {'username': 'LifeMoroz', 'male   ': True}, 'error': 1, 'currentLevel': 43, 'userId': 63563}
+No such items
+WTB: JimmySet Helmet x1
+WTB: JimmySet Pants x1
+{'currentLevel': 43, 'inFightInfo': None, 'userContext': {'male   ': True, 'username': 'LifeMoroz'}, 'userLevel': 43, 'infos': {'lang': 'ru', 'user_id': 63563, 'city_id': 3}, 'userId': 63563, 'locale': 'rus', 'error': 1, 'title_for_layout': 'LifeMoroz, VirCities - город твоей мечты', 'setFlash': [{'msg': 'Произошла ошибка', 'class': 'flash_error'}]}
+No such items
+WTB: JimmySet Pants x1
+WTB: JimmySet Boots x1
+{'setFlash': [{'msg': 'Произошла ошибка', 'class': 'flash_error'}], 'currentLevel': 43, 'userLevel': 43, 'userId': 63563, 'locale': 'rus', 'title_for_layout': 'LifeMoroz, VirCities - город твоей мечты', 'error': 1, 'infos': {'city_id': 3, 'lang': 'ru', 'user_id': 63563}, 'userContext': {'username': 'LifeMoroz', 'male   ': True}, 'inFightInfo': None}
+No such items
+Put on:  pants_inventory
+Put on:  pants_inventory
+Put on:  pants_inventory
+Put on:  boots_inventory
+Put on:  second_weapon_inventory
+Put on:  second_weapon_inventory
+Put on:  head_inventory
+Put on:  torso_inventory
+Put on:  torso_inventory
+Put on:  head_inventory
+Put on:  first_weapon_inventory
+Put on:  first_weapon_inventory
+Put on:  boots_inventory
+Put on:  pants_inventory
+Put on:  pants_inventory
+Put on:  pants_inventory
+Put on:  head_inventory
+Put on:  torso_inventory
+Put on:  second_weapon_inventory
+Put on:  first_weapon_inventory
+Put on:  pants_inventory
+Put on:  pants_inventory
+Put on:  pants_inventory
+Put on:  boots_inventory
+Put on:  torso_inventory
+Put on:  first_weapon_inventory
+Put on:  second_weapon_inventory
+Put on:  pants_inventory
+Put on:  pants_inventory
+Put on:  pants_inventory
+Put on:  head_inventory
+Put on:  boots_inventory
+Put on:  pants_inventory
+Put on:  pants_inventory
+Put on:  pants_inventory
+Put on:  boots_inventory
+Put on:  head_inventory
+Put on:  first_weapon_inventory
+Put on:  second_weapon_inventory
+Put on:  torso_inventory
+Put on:  pants_inventory
+Put on:  pants_inventory
+Put on:  pants_inventory
+Put on:  boots_inventory
+Put on:  first_weapon_inventory
+Put on:  second_weapon_inventory
+Put on:  torso_inventory
+Put on:  head_inventory
+Put on:  torso_inventory
+Put on:  head_inventory
+Put on:  boots_inventory
+Put on:  pants_inventory
+Put on:  pants_inventory
+Put on:  pants_inventory
+Put on:  second_weapon_inventory
+Put on:  first_weapon_inventory
+Put on:  first_weapon_inventory
+Put on:  second_weapon_inventory
+Put on:  head_inventory
+Put on:  torso_inventory
+Put on:  boots_inventory
+Put on:  pants_inventory
+Put on:  pants_inventory
+Put on:  pants_inventory
+Check strength of items in set
+hp: 105/265
+Got damage:  0
+Earned: 87839
+Got damage:  0
+Earned: 122082
+Got damage:  0
+Earned: 50123
+Got damage:  -168
+hp: 97/265
+Earned: 146895
+Got damage:  0
+Earned: 105209
+Got damage:  0
+Earned: 52604
+Got damage:  0
+Earned: 107690
+Got damage:  0
+Earned: 133992
+Got damage:  -84
+hp: 181/265
+Earned: 91809
+Got damage:  0
+Earned: 146399
+Got damage:  -168
+hp: 97/265
+Earned: 108186
+Got damage:  0
+Earned: 63026
+Got damage:  0
+Trauma: _lt
+Earned: 59552
+Got damage:  0
+Earned: 62530
+Got damage:  0
+Earned: 120097
+Got damage:  -84
+hp: 181/265
+Earned: 128533
+Got damage:  0
+Earned: 109179
+Got damage:  -84
+hp: 181/265
+Earned: 93794
+Got damage:  -168
+hp: 97/265
+Trauma: _mt
+Earned: 112156
+Got damage:  0
+Trauma: _mt
+Earned: 64515
+Got damage:  0
+Earned: 64515
+Got damage:  0
+Earned: 86847
+Got damage:  -84
+hp: 181/265
+Earned: 66996
+Got damage:  -84
+hp: 181/265
+Earned: 68485
+Got damage:  -84
+hp: 181/265
+Earned: 67989
+Got damage:  0
+Earned: 88335
+Items were broken =(
+Finished by count=(
+Earned: 2409377.0
+Got damage:  -84
+hp: 181/265
+Trauma: _lt
+Earned: 102727
+Got damage:  0
+Earned: 112156
+Got damage:  0
+Earned: 105209
+Got damage:  0
+Earned: 85358
+Items were broken =(
+Finished by count=(
+Earned: 405450.0
