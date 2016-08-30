@@ -36,7 +36,7 @@ FITTABLE_TYPES = ['clothes', 'ammunition', 'weapon']
 
 CLOSE_WEAPON = 'closeRangeWeapon'  # close weapon
 
-DEFAULT_OP_COST = 105
+DEFAULT_OP_COST = 120
 RESOURCE_OP = {
     'Уголь': {
         'op': 1, 'buy_price': None, "dumping": False
