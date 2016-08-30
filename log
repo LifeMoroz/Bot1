@@ -3642,3 +3642,5 @@ Spend: 1969995.1800000002
 Earned: 3391846.0
 Profit: 1421850.8199999998
 ****************END CYCLE****************
+****************NEW CYCLE****************
+{'error': 1, 'setFlash': [{'class': 'flash_error', 'msg': 'not_last_session'}]}

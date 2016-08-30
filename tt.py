@@ -6,28 +6,6 @@ import json
 
 import time
 
-HEADERS = {
-    "Host": "api.vircities.com",
-    "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0",
-    "Accept" "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
-    "Accept-Language": "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3",
-    "Accept-Encoding": "gzip, deflate",
-    "Content-Type": "application/x-www-form-urlencoded",
-    "Referer": "http://api.vircities.com/app/index.html",
-    "Cookie": "__cfduid=d8043380e229f3261673456376450dac31471467230; _ym_uid=1471467228187734207; _ga=GA1.2.1615719236.1471467228; __utma=94353562.1615719236.1471467228.1471467229.1471553673.2; __utmz=94353562.1471553673.2.2.utmcsr=yandex|utmccn=(organic)|utmcmd=organic; _ga=GA1.1.1615719236.1471467228; CAKEPHP=c70o8tusk3nad5ls75t40cdka5; CakeCookie[lang]=rus; _gat=1"
-}
-
-POST_HEADERS = {
-    "Host": "api.vircities.com",
-    "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-    "Accept-Language": "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3",
-    "Accept-Encoding": "gzip, deflate",
-    "Content-Type": "application/x-www-form-urlencoded",
-    "Referer: http": "//api.vircities.com/app/index.html",
-    "Cookie:": "__cfduid=d8043380e229f3261673456376450dac31471467230; _ym_uid=1471467228187734207; _ga=GA1.2.1615719236.1471467228; __utma=94353562.1615719236.1471467228.1471467229.1471553673.2; __utmz=94353562.1471553673.2.2.utmcsr=yandex|utmccn=(organic)|utmcmd=organic; _ga=GA1.1.1615719236.1471467228; CAKEPHP=c70o8tusk3nad5ls75t40cdka5; CakeCookie[lang]=rus; _gat=1",
-    "Connection": "keep-alive",
-}
 
 LONGPOLLING_TIMEOUT = 25
 MENU_ITEMS = ["armorHead", "armorLegs", "armorBoots", "armorBody", "closeRangeWeapon"]
@@ -426,15 +404,15 @@ def farm_mset1():
 
 if __name__ == '__main__':
     # simulate()
-    # print(check_resources())
+    print(check_resources())
     # time.sleep(180)
-    earned = farm(17, 4, 1, count=30)
-    warn("Earned: {}".format(earned))
-    try:
-        for i in range(1):
-            time.sleep(3)
-            farm_mset()
-    except NoEnergyError:
-        pass
-    DEBUG_LOG.write("*" * 16 + "END CYCLE" + "*" * 16 + "\n")
-    DEBUG_LOG.close()
+    # earned = farm(17, 4, 1, count=30)
+    # warn("Earned: {}".format(earned))
+    # try:
+    #     for i in range(1):
+    #         time.sleep(3)
+    #         farm_mset()
+    # except NoEnergyError:
+    #     pass
+    # DEBUG_LOG.write("*" * 16 + "END CYCLE" + "*" * 16 + "\n")
+    # DEBUG_LOG.close()
