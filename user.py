@@ -198,7 +198,7 @@ class User(object):
         #         spend = set.buy()
         #         self.update_inventory()
         #     self.inventory.fit(set)
-
+        #
         # self.update_inventory()
         # if not self.inventory.check_set(set):
         #     warn("Check strength of items in set")

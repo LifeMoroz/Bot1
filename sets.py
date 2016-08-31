@@ -22,6 +22,10 @@ class ItemTypeMeta(type):
         return new_type
 
 
+class NoSuchItem(Exception):
+    pass
+
+
 class ItemType(metaclass=ItemTypeMeta):
     def __init__(self, **kwargs):
         self.type = kwargs.get("type")
@@ -43,6 +47,9 @@ class ItemType(metaclass=ItemTypeMeta):
         offer = get_best_offer(item_id)
         spend = 0
         bought = 0
+        if not offer:
+            warn("No such items ", self.name)
+            raise NoSuchItem
         while bought < quantity:
             try:
                 _buy = offer['number'] if offer['number'] < quantity else quantity

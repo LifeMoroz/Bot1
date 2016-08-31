@@ -1,7 +1,6 @@
 # encoding": "utf-8
-import time
 
-from set_instances import js_medium_set, js_t_set
+from set_instances import js_t_set
 from user import User
 
 

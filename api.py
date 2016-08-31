@@ -95,6 +95,7 @@ def get_best_offer(item_id, min_n=0, min_sum=0):
     offers = get_best_offers(item_id, min_n, min_sum)
     if offers:
         return offers[0]
+    return None
 
 
 def short_info():
