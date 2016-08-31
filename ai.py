@@ -1,3 +1,5 @@
+from api import get, get_best_offer
+from log import debug
 
 LONGPOLLING_TIMEOUT = 25
 
@@ -78,7 +80,7 @@ def check_resources(min_sum=MIN_OFFER):
     get("http://api.vircities.com/exchanges/lots_by_type_user/resource.json?os=unknown&v=3.00", decode=True)[
         'exchanges']
     interesting_offers = {}
-    log.debug("{:<13} {:5} {:8}".format("Type", "Buy", "BEST"))
+    debug("{:<13} {:5} {:8}".format("Type", "Buy", "BEST"))
     for resource in resource_offers.values():
         if RESOURCE_OP.get(resource['name']) is None:
             continue
@@ -89,7 +91,7 @@ def check_resources(min_sum=MIN_OFFER):
         best_offer = get_best_offer(resource['id'], min_sum=min_sum)
         if best_offer:
             best_offer_price = best_offer['price']
-            log.debug("{:<13} {:5} {:8}".format(resource['name'], buy_price, best_offer_price))
+            debug("{:<13} {:5} {:8}".format(resource['name'], buy_price, best_offer_price))
             if buy_price >= float(best_offer_price):
                 print(resource['name'], best_offer_price)
                 interesting_offers[resource['id']] = buy_price

@@ -193,16 +193,16 @@ class User(object):
 
     def farm(self, set):
         spend = None
-        # if not self.inventory.is_fitted(set):
-        #     if not self.inventory.has_set(set):
-        #         spend = set.buy()
-        #         self.update_inventory()
-        #     self.inventory.fit(set)
-        #
-        # self.update_inventory()
-        # if not self.inventory.check_set(set):
-        #     warn("Check strength of items in set")
-        #     # return
+        if not self.inventory.is_fitted(set):
+            if not self.inventory.has_set(set):
+                spend = set.buy()
+                self.update_inventory()
+            self.inventory.fit(set)
+
+        self.update_inventory()
+        if not self.inventory.check_set(set):
+            warn("Check strength of items in set")
+            # return
 
         if not set.align:
             earned = self._farm(*set.band, count=self.inventory.set_stength(set))
