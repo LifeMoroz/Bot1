@@ -82,7 +82,6 @@ class Inventory(object):
             if items[0] in set:
                 for item in items:
                     slot = self.get_item_slot(item)
-                    print(slot)
                     item.put_on(slot)
                     item.equipped_slot = slot
                     self.equipment.set_item(item)
@@ -98,6 +97,9 @@ class Inventory(object):
     def check_set(self, set):
         if not self.is_fitted(set):
             self.fit(set)
+
+        if set.align:
+            return True
 
         min_strength = 1000
         unevenly = True
@@ -191,18 +193,27 @@ class User(object):
 
     def farm(self, set):
         spend = None
-        if not self.inventory.is_fitted(set):
-            if not self.inventory.has_set(set):
-                spend = set.buy()
+        # if not self.inventory.is_fitted(set):
+        #     if not self.inventory.has_set(set):
+        #         spend = set.buy()
+        #         self.update_inventory()
+        #     self.inventory.fit(set)
+
+        # self.update_inventory()
+        # if not self.inventory.check_set(set):
+        #     warn("Check strength of items in set")
+        #     # return
+
+        if not set.align:
+            earned = self._farm(*set.band, count=self.inventory.set_stength(set))
+        else:
+            earned = 0
+            count = self.inventory.set_stength(set)
+            while count > 0:
+                self.inventory.fit(set)
+                earned += self._farm(*set.band, count=count)
                 self.update_inventory()
-            self.inventory.fit(set)
-
-        self.update_inventory()
-        if not self.inventory.check_set(set):
-            warn("Check strength of items in set")
-            return
-
-        earned = self._farm(*set.band, count=self.inventory.set_stength(set))
+                count = self.inventory.set_stength(set)
 
         warn("Earned: {}".format(earned))
         if spend is not None:

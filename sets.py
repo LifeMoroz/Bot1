@@ -36,6 +36,7 @@ class ItemType(metaclass=ItemTypeMeta):
             self.slot = None
         self.category_id = kwargs.get("category_id")
         self.produce_hours = kwargs.get("produce_hours")
+        self.strength = kwargs.get("strength")
 
     def buy(self, quantity=1):
         item_id = get_item_id(self.type, self.name)
@@ -43,7 +44,11 @@ class ItemType(metaclass=ItemTypeMeta):
         spend = 0
         bought = 0
         while bought < quantity:
-            _buy = offer['number'] if offer['number'] < quantity else quantity
+            try:
+                _buy = offer['number'] if offer['number'] < quantity else quantity
+            except TypeError:
+                _buy = 1
+                pass
             debug("WTB: {} x{}".format(self.name, _buy))
             buy(offer['id'], _buy)
             bought += _buy
@@ -148,11 +153,38 @@ class Equipment(object):
 class Set(Equipment):
     def __init__(self, *args, **kwargs):
         self.band = kwargs.pop("band")
+        self.align = kwargs.get("align")
+        if self.align is not None:
+            kwargs.pop("align")
         super().__init__(**kwargs)
 
     def set_items(self):
         return self._items.values()
 
-    def buy(self):  # TODO: Move to Inventory
-        return sum([item.buy() for item in self.set_items() if item is not None])
+    def get_max_strength(self):
+        max_strength = None
+        for _, item in self.items():
+            if item is not None and (max_strength is None or item.strength > max_strength):
+                max_strength = item.strength
+        return max_strength
 
+    def buy(self):  # TODO: Move to Inventory
+        spend = 0
+        if self.align:
+            max_strength = self.get_max_strength()
+        for item in self.set_items():
+            if item is None:
+                continue
+
+            if self.align and max_strength and item.strength:
+                if max_strength % item.strength == 0:
+                    quantity = int(max_strength / item.strength)
+                else:
+                    warn("Cant set quantity of items to align set")
+                    quantity = 1
+            else:
+                quantity = 1
+
+            spend += sum([item.buy() for _ in range(quantity)])
+
+        return spend
