@@ -14,14 +14,25 @@ js_max_legs = ItemType(type="armorLegs", name="JimmyMax Pants", strength=10)
 js_max_boots = ItemType(type="armorBoots", name="JimmyMax Boots", strength=10)
 js_max_weapon = ItemType(type="closeRangeWeapon", name="JimmyMax", strength=10)
 
+power_max_helmet = ItemType(type="armorHead", name="Power Armor Helmet", strength=10)
+power_max_body = ItemType(type="armorBody", name="Power Armor  Body", strength=10)
+power_max_legs = ItemType(type="armorLegs", name="Power Armor Rear Legs", strength=10)
+power_max_boots = ItemType(type="armorBoots", name="Power Armor Front Legs", strength=10)
+power_max_weapon = ItemType(type="closeRangeWeapon", name="Balisong", strength=10)
+
 js_medium_set = Set(band=(17, 5, 1), head_inventory=js_helmet, torso_inventory=js_body, pants_inventory=js_legs,
                     boots_inventory=js_boots, first_weapon_inventory=js_medium_weapon, second_weapon_inventory=js_medium_weapon)
 js_t_set = Set(align=True, band=(17, 5, 1), head_inventory=js_helmet, torso_inventory=js_body, pants_inventory=js_legs,
                boots_inventory=js_boots, first_weapon_inventory=insoles, second_weapon_inventory=insoles)
+
 js_light_set = Set(band=(17, 4, 2), head_inventory=js_helmet, torso_inventory=js_body, pants_inventory=js_legs,
                    boots_inventory=js_boots, first_weapon_inventory=js_light_weapon, second_weapon_inventory=js_light_weapon)
 
 js_max_set = Set(band=(18, 5, 4), head_inventory=js_max_helmet, torso_inventory=js_max_body, pants_inventory=js_max_legs,
-                 boots_inventory=js_max_boots, first_weapon_inventory=js_max_weapon, second_weapon_inventory=js_max_weapon)
+                 boots_inventory=js_max_boots, first_weapon_inventory=js_light_weapon, second_weapon_inventory=js_max_weapon)
+
 js_max_light_set = Set(band=(17, 5, 2), head_inventory=js_max_helmet, torso_inventory=js_max_body, pants_inventory=js_max_legs,
                        boots_inventory=js_max_boots, first_weapon_inventory=js_light_weapon, second_weapon_inventory=js_light_weapon)
+
+power_set = Set(band=(18, 5, 4), head_inventory=power_max_helmet, torso_inventory=power_max_body, pants_inventory=power_max_legs,
+                boots_inventory=power_max_boots, first_weapon_inventory=power_max_weapon, second_weapon_inventory=power_max_weapon)

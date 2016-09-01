@@ -9,7 +9,7 @@ __author__ = 'ruslan_galimov'
 
 def get(url, decode=False):
     data = json.loads(requests.get(url, headers=HEADERS).content.decode("utf-8"))
-    if data.get('setFlash') and data['setFlash'][0]['class'] != 'flash_success':
+    if data.get('setFlash') and (data['setFlash'][0].get('class') is None or data['setFlash'][0]['class'] != 'flash_success'):
         warn(data)
         raise RequestError
     if decode:
@@ -81,8 +81,8 @@ def get_item_id(type, name):
 
 def get_best_offers(item_id, min_n=0, min_sum=0):
     try:
-        offers = get("http://api.vircities.com/exchanges/lot_offers/vdollars/{head_id}/price/asc.json?os".format(head_id=item_id),
-            decode=True)['offers']
+        offers = get("http://api.vircities.com/exchanges/lot_offers/vdollars/{head_id}/price/asc.json?os=unknown&v=3.00".format(head_id=item_id),
+                     decode=True)['offers']
     except RequestError:
         warn("No such items")
         return []

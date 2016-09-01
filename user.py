@@ -145,51 +145,48 @@ class User(object):
     def _farm(self, band_id, complexity, rank, finish_if_broken=True, count=None):
         earned = 0
         lose = 0
-        try:
-            if int(self.health) < int(self.max_health):
+        if int(self.health) < int(self.max_health):
+            self.heal()
+
+        while int(self.energy) >= 5 and (count is None or count > 0) and lose < 3:
+            self.energy -= 5
+            band_info = api.band_info(band_id)['progress']
+            if len(band_info) < complexity:
+                print("Mission unavailable")
+                break
+
+            if int(rank) > band_info[complexity - 1]['availableRank']:
+                print("Mission unavailable")
+                break
+
+            result = api.fight(band_id, complexity, rank)
+            if count is not None:
+                count -= 1
+            debug("Got damage: ", result['result']['healthLoss'])
+            if int(result['result']['healthLoss']) < 0 or result['result']['traumas']:
+                time.sleep(1)
                 self.heal()
 
-            while int(self.energy) >= 5 and (count is None or count > 0) and lose < 3:
-                self.energy -= 5
-                band_info = api.band_info(band_id)['progress']
-                if len(band_info) < complexity:
-                    print("Mission unavailable")
-                    break
+            if result['userWin']:
+                debug("Earned: {}".format(result['result']['vdEarned']))
+                earned += float(result['result']['vdEarned'])
+                lose = 0
+            else:
+                lose += 1
+                debug("WE lost it :(")
 
-                if int(rank) > band_info[complexity - 1]['availableRank']:
-                    print("Mission unavailable")
-                    break
+            if finish_if_broken and result['result']['brokenItems']:
+                warn("Items were broken =(")
+                break
 
-                result = api.fight(band_id, complexity, rank)
-                if count is not None:
-                    count -= 1
-                debug("Got damage: ", result['result']['healthLoss'])
-                if int(result['result']['healthLoss']) < 0 or result['result']['traumas']:
-                    time.sleep(1)
-                    self.heal()
-
-                if result['userWin']:
-                    debug("Earned: {}".format(result['result']['vdEarned']))
-                    earned += float(result['result']['vdEarned'])
-                    lose = 0
-                else:
-                    lose += 1
-                    debug("WE lost it :(")
-
-                if finish_if_broken and result['result']['brokenItems']:
-                    warn("Items were broken =(")
-                    break
-
-            if count == 0:
-                debug("Finished by count=(")
-                return earned
-
-            if int(self.energy) < 5:
-                warn("No energy =(")
-                raise NoEnergyError()
-
-        finally:
+        if count == 0:
+            debug("Finished by count=(")
             return earned
+
+        if int(self.energy) < 5:
+            warn("No energy =(")
+            raise NoEnergyError()
+        return earned
 
     def farm(self, set):
         spend = None
