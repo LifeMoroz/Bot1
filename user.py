@@ -25,6 +25,7 @@ class UserEquipment(Equipment):
                 return False
         return True
 
+
 class Inventory(object):
     def __init__(self):
         self.equipment = None
@@ -168,12 +169,12 @@ class User(object):
                 self.heal()
 
             if result['userWin']:
-                debug("Earned: {}".format(result['result']['vdEarned']))
+                debug("Earned in fight: {}".format(result['result']['vdEarned']))
                 earned += float(result['result']['vdEarned'])
                 lose = 0
             else:
                 lose += 1
-                debug("WE lost it :(")
+                warn("WE lost it :(")
 
             if finish_if_broken and result['result']['brokenItems']:
                 warn("Items were broken =(")
@@ -197,9 +198,9 @@ class User(object):
             self.inventory.fit(set)
 
         self.update_inventory()
-        if not self.inventory.check_set(set):
+        if not self.inventory.check_set(set) and not set.align:
             warn("Check strength of items in set")
-            # return
+            return
 
         if not set.align:
             earned = self._farm(*set.band, count=self.inventory.set_stength(set))
@@ -213,6 +214,7 @@ class User(object):
                 count = self.inventory.set_stength(set)
 
         warn("Earned: {}".format(earned))
+        warn("Earned per OP: {}".format(earned/set.op_cost))
         if spend is not None:
             warn("Spend: {}".format(spend))
             warn("Profit: {}".format(earned - spend))

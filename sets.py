@@ -1,6 +1,8 @@
 import time
+
+import local_settings
 from consts import SIMULATE
-from exceptions import RequestError
+from exceptions import RequestError, PriceError
 from log import debug, warn
 from api import put_on, buy, get_item_id, get_best_offer, put_off, item_info, item_type_info
 
@@ -13,6 +15,7 @@ class ItemTypeMeta(type):
     def __call__(cls, *args, **kwargs):
         if kwargs.get("name") is None:
             raise Exception
+        kwargs["name"] = kwargs.get("name").strip().replace("  ", " ")
 
         if kwargs["name"] in cls.__cached_type:
             return cls.__cached_type[kwargs["name"]]
@@ -43,7 +46,10 @@ class ItemType(metaclass=ItemTypeMeta):
         self.strength = kwargs.get("strength")
 
     def buy(self, quantity=1):
-        item_id = get_item_id(self.type, self.name)
+        if not self.id:
+            item_id = get_item_id(self.type, self.name)
+        else:
+            item_id = self.id
         offer = get_best_offer(item_id)
         spend = 0
         bought = 0
@@ -57,6 +63,9 @@ class ItemType(metaclass=ItemTypeMeta):
                 _buy = 1
                 pass
             debug("WTB: {} x{}".format(self.name, _buy))
+            if local_settings.NOT_MORE_THAN and self.produce_hours and self.produce_hours * local_settings.NOT_MORE_THAN < float(offer['price']):
+                debug("Cost too much {}".format(round(float(offer['price']) / self.produce_hours), 2))
+                raise PriceError("Cost too much")
             buy(offer['id'], _buy)
             bought += _buy
         spend += float(offer['price'])
@@ -182,7 +191,6 @@ class Set(Equipment):
         for item in self.set_items():
             if item is None:
                 continue
-
             if self.align and max_strength and item.strength:
                 if max_strength % item.strength == 0:
                     quantity = int(max_strength / item.strength)
@@ -195,3 +203,7 @@ class Set(Equipment):
             spend += sum([item.buy() for _ in range(quantity)])
 
         return spend
+
+    @property
+    def op_cost(self):
+        return sum([float(item.produce_hours) for _name, item in self.items() if item is not None])

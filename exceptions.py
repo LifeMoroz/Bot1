@@ -7,3 +7,7 @@ class RequestError(Exception):
 
 class NoEnergyError(Exception):
     pass
+
+
+class PriceError(Exception):
+    pass
