@@ -36,13 +36,13 @@ class Inventory(object):
         if short_info:
             equipped_items = short_info['equippedItems']
         else:
-            equipped_items = api.get("http://api.vircities.com/users/short_infos.json?os=unknown&v=3.00", decode=True)['equippedItems']
+            equipped_items = api.get("http://api.vircities.com/users/short_infos.json", decode=True)['equippedItems']
         for it in equipped_items:
             type_it = ItemType(**it['ItemType'])
             user_it = UserItem(type=type_it, **it['UserItem'])
             self.equipment.put_on_item(user_it)
 
-        storage_json = api.get("http://api.vircities.com/user_items/storage.json?os=unknown&v=3.00", decode=True)['storage']
+        storage_json = api.get("http://api.vircities.com/user_items/storage.json", decode=True)['storage']
         items = {}
         for i in storage_json['itemsArray']:
             it = i['UserItem']

@@ -39,8 +39,8 @@ def go_to_trade_center():
     get("http://api.vircities.com/app/scripts/views/trade-center.js")
     get("http://api.vircities.com/app/scripts/templates/trade-center.tmpl")
     time.sleep(0.5)
-    get("http://api.vircities.com/exchanges/items_groups_categories_business.json?os=unknown&v=3.00")
-    get("http://api.vircities.com/exchanges/items_groups_categories.json?os=unknown&v=3.00")
+    get("http://api.vircities.com/exchanges/items_groups_categories_business.json")
+    get("http://api.vircities.com/exchanges/items_groups_categories.json")
 
 
 def go_hospital():
@@ -77,7 +77,7 @@ def sell():
 def check_resources(min_sum=MIN_OFFER):
     # TODO: dumping
     resource_offers = \
-    get("http://api.vircities.com/exchanges/lots_by_type_user/resource.json?os=unknown&v=3.00", decode=True)[
+    get("http://api.vircities.com/exchanges/lots_by_type_user/resource.json", decode=True)[
         'exchanges']
     interesting_offers = {}
     debug("{:<13} {:5} {:8}".format("Type", "Buy", "BEST"))

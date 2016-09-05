@@ -1,11 +1,11 @@
 from sets import Set, ItemType
 
 # JUMMY SET
-js_helmet = ItemType(type="armorHead", name="JimmySet Helmet", strength=30)
-js_body = ItemType(type="armorBody", name="JimmySet Vest", strength=30)
-js_legs = ItemType(type="armorLegs", name="JimmySet Pants", strength=30)
-js_boots = ItemType(type="armorBoots", name="JimmySet Boots", strength=30)
-js_light_weapon = ItemType(type="closeRangeWeapon", name="Jimmy lite", strength=30)
+js_helmet = ItemType(type="armorHead", name="JimmySet Helmet", strength=30, produce_hours=2053)
+js_body = ItemType(type="armorBody", name="JimmySet Vest", strength=30, produce_hours=2053)
+js_legs = ItemType(type="armorLegs", name="JimmySet Pants", strength=30, produce_hours=2053)
+js_boots = ItemType(type="armorBoots", name="JimmySet Boots", strength=30, produce_hours=2053)
+js_light_weapon = ItemType(type="closeRangeWeapon", name="Jimmy lite", strength=30, produce_hours=2678)
 js_medium_weapon = ItemType(type="closeRangeWeapon", name="Jimmy medium", strength=30, produce_hours=3848)
 
 # JUMMY MAX
@@ -42,7 +42,7 @@ js_align_set = Set(band=(17, 4, 3), align=True, head_inventory=js_helmet, torso_
                    boots_inventory=js_boots, first_weapon_inventory=balisong, second_weapon_inventory=balisong)
 
 js_max_set = Set(band=(18, 5, 4), head_inventory=js_max_helmet, torso_inventory=js_max_body, pants_inventory=js_max_legs,
-                 boots_inventory=js_max_boots, first_weapon_inventory=js_light_weapon, second_weapon_inventory=js_max_weapon)
+                 boots_inventory=js_max_boots, first_weapon_inventory=balisong, second_weapon_inventory=balisong)
 
 js_max_light_set = Set(band=(17, 5, 2), head_inventory=js_max_helmet, torso_inventory=js_max_body, pants_inventory=js_max_legs,
                        boots_inventory=js_max_boots, first_weapon_inventory=js_light_weapon, second_weapon_inventory=js_light_weapon)
