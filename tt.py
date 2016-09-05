@@ -35,8 +35,7 @@ def calculate():
 if __name__ == '__main__':
     # print(check_resources())
     user = User()
-    set = set_instances.js_max_set
-    earned = user._farm(*set.band, count=7)
-    # while user.energy > set.get_max_strength() * 5:
-    #     user.farm(set)
+    set = set_instances.g_set
+    while user.energy > set.get_max_strength() * 5:
+        user.farm(set)
     # calculate()

@@ -123,12 +123,31 @@ class Inventory(object):
 
 class User(object):
     def __init__(self):
-        self.energy = None
-        self.health = None
-        self.max_health = None
         self.inventory = Inventory()
         user = api.short_info()["user"]["User"]
-        self.energy, self.max_health, self.health = int(user['energy']), int(user['max_health']), int(user['health'])
+        self._energy, self._max_health, self._health = int(user['energy']), int(user['max_health']), int(user['health'])
+        self._timestamp = time.time() + 60  # Refresh every 60 seconds
+
+    @property
+    def energy(self):
+        if self._timestamp < time.time():
+            user = api.short_info()["user"]["User"]
+            self._energy, self._max_health, self._health = int(user['energy']), int(user['max_health']), int(user['health'])
+        return self._energy
+
+    @property
+    def health(self):
+        if self._timestamp < time.time():
+            user = api.short_info()["user"]["User"]
+            self._energy, self._max_health, self._health = int(user['energy']), int(user['max_health']), int(user['health'])
+        return self._health
+
+    @property
+    def max_health(self):
+        if self._timestamp < time.time():
+            user = api.short_info()["user"]["User"]
+            self._energy, self._max_health, self._health = int(user['energy']), int(user['max_health']), int(user['health'])
+        return self._max_health
 
     def heal(self):
         user = api.hospital()['User']
@@ -150,7 +169,7 @@ class User(object):
             self.heal()
 
         while int(self.energy) >= 5 and (count is None or count > 0) and lose < 3:
-            self.energy -= 5
+            self._energy -= 5
             band_info = api.band_info(band_id)['progress']
             if len(band_info) < complexity:
                 print("Mission unavailable")

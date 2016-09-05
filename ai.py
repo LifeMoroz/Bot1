@@ -1,3 +1,5 @@
+import time
+
 from api import get, get_best_offer
 from log import debug
 
@@ -70,6 +72,19 @@ def simulate():
     get("http://api.vircities.com/app/scripts/templates/trade-center/items-buy-grouped.tmpl")
     time.sleep(1.5)
 
+
+def go_buisness():
+    get("http://api.vircities.com/app/scripts/views/business.js")
+    get("http://api.vircities.com/app/scripts/templates/business.tmpl")
+    get("http://api.vircities.com/app/scripts/templates/business/blocks/company-element.tmpl")
+    get("http://api.vircities.com/app/scripts/views/common/lazy-loading-view.js")
+    get("http://api.vircities.com/app/scripts/views/components/lazy-loading.js")
+    get("http://api.vircities.com/app/scripts/views/common/list-view.js")
+    get("http://api.vircities.com/app/bower_components/velocity/velocity.js")
+    get("http://api.vircities.com/app/bower_components/velocity/velocity.ui.js")
+    time.sleep(1)
+
+
 def sell():
     pass
 
@@ -96,3 +111,7 @@ def check_resources(min_sum=MIN_OFFER):
                 print(resource['name'], best_offer_price)
                 interesting_offers[resource['id']] = buy_price
     return interesting_offers
+
+
+def check_buisness():
+    go_buisness()

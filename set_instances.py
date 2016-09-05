@@ -21,10 +21,17 @@ apower_max_body = ItemType(id=2318, type="armorBody", name="Advanced Power Armor
 apower_max_legs = ItemType(id=2322, type="armorLegs", name="Advanced Power Armor Front Legs", strength=10, produce_hours=1024)
 apower_max_boots = ItemType(id=2320, type="armorBoots", name="Advanced Power Armor Rear Legs", strength=10, produce_hours=1024)
 
+# POWER SET
 power_max_helmet = ItemType(id=2298, type="armorHead", name="Power Armor Helmet", strength=10, produce_hours=1024)
 power_max_body = ItemType(id=2300, type="armorBody", name="Power Armor Body", strength=10, produce_hours=1024)
 power_max_legs = ItemType(id=2304, type="armorLegs", name="Armor Front Legs", strength=10, produce_hours=1024)
 power_max_boots = ItemType(id=2302, type="armorBoots", name="Power Armor Rear Legs", strength=10, produce_hours=1024)
+
+# 2G set
+g_helmet = ItemType(id=1803, type="armorHead", name="VizoR 2G", strength=10, produce_hours=1093)
+g_body = ItemType(id=1805, type="armorBody", name="AbsorptiON 2G", strength=10, produce_hours=1024)
+g_legs = ItemType(id=1807, type="armorLegs", name="RefleX 2G", strength=10, produce_hours=1024)
+g_boots = ItemType(id=1809, type="armorBoots", name="GleaM 2G", strength=10, produce_hours=1024)
 
 # WEAPON
 insoles = ItemType(type="closeRangeWeapon", name="Titanium insoles", strength=10)
@@ -52,3 +59,6 @@ apower_set = Set(band=(18, 5, 4), head_inventory=js_max_helmet, torso_inventory=
 
 power_set = Set(band=(18, 5, 4), head_inventory=power_max_helmet, torso_inventory=power_max_body, pants_inventory=power_max_legs,
                 boots_inventory=power_max_boots, first_weapon_inventory=justice_ring, second_weapon_inventory=justice_ring)
+
+g_set = Set(band=(18, 5, 4), head_inventory=g_helmet, torso_inventory=g_body, pants_inventory=g_legs,
+            boots_inventory=g_boots, first_weapon_inventory=balisong, second_weapon_inventory=balisong)
