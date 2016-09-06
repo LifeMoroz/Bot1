@@ -39,6 +39,7 @@ razor_blade = ItemType(id=2159, type="closeRangeWeapon", name="RazorBlade", stre
 balisong = ItemType(id=2219, type="closeRangeWeapon", name="Balisong", strength=10, produce_hours=1302)
 gold_kastet = ItemType(id=2219, type="closeRangeWeapon", name="Gold kastet", strength=10)
 justice_ring = ItemType(id=1422, type="closeRangeWeapon", name="Justice Ring ", strength=10, produce_hours=1549)
+steel_fist = ItemType(id=1432, type="closeRangeWeapon", name="Steel Fist", strength=10, produce_hours=532)
 
 js_medium_set = Set(band=(17, 5, 1), head_inventory=js_helmet, torso_inventory=js_body, pants_inventory=js_legs,
                     boots_inventory=js_boots, first_weapon_inventory=js_medium_weapon, second_weapon_inventory=js_medium_weapon)
@@ -61,4 +62,4 @@ power_set = Set(band=(18, 5, 4), head_inventory=power_max_helmet, torso_inventor
                 boots_inventory=power_max_boots, first_weapon_inventory=justice_ring, second_weapon_inventory=justice_ring)
 
 g_set = Set(band=(18, 5, 4), head_inventory=g_helmet, torso_inventory=g_body, pants_inventory=g_legs,
-            boots_inventory=g_boots, first_weapon_inventory=js_max_weapon, second_weapon_inventory=js_max_weapon)
+            boots_inventory=g_boots, first_weapon_inventory=js_max_weapon)
