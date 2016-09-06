@@ -13,13 +13,13 @@ js_max_helmet = ItemType(type="armorHead", name="JimmyMax Helmet", strength=10, 
 js_max_body = ItemType(type="armorBody", name="JimmyMax Vest", strength=10, produce_hours=1274)
 js_max_legs = ItemType(type="armorLegs", name="JimmyMax Pants", strength=10, produce_hours=1261)
 js_max_boots = ItemType(type="armorBoots", name="JimmyMax Boots", strength=10, produce_hours=1261)
-js_max_weapon = ItemType(type="closeRangeWeapon", name="JimmyMax", strength=10, produce_hours=1261)
+js_max_weapon = ItemType(type="closeRangeWeapon", name="JimmyMax", strength=10, produce_hours=2410)
 
 # A POWER SET
 apower_max_helmet = ItemType(id=2316, type="armorHead", name="Advanced Power Armor Helmet", strength=10, produce_hours=1024)
 apower_max_body = ItemType(id=2318, type="armorBody", name="Advanced Power Armor Body", strength=10, produce_hours=1024)
 apower_max_legs = ItemType(id=2322, type="armorLegs", name="Advanced Power Armor Front Legs", strength=10, produce_hours=1024)
-apower_max_boots = ItemType(id=2320, type="armorBoots", name="Advanced Power Armor Rear Legs", strength=10, produce_hours=1024)
+apower_max_boots = ItemType(id=2320, type="armorBoots", name="Advanced Power Armor Rear Legs", strength=10, produce_hours=2410)
 
 # POWER SET
 power_max_helmet = ItemType(id=2298, type="armorHead", name="Power Armor Helmet", strength=10, produce_hours=1024)
@@ -61,4 +61,4 @@ power_set = Set(band=(18, 5, 4), head_inventory=power_max_helmet, torso_inventor
                 boots_inventory=power_max_boots, first_weapon_inventory=justice_ring, second_weapon_inventory=justice_ring)
 
 g_set = Set(band=(18, 5, 4), head_inventory=g_helmet, torso_inventory=g_body, pants_inventory=g_legs,
-            boots_inventory=g_boots, first_weapon_inventory=balisong, second_weapon_inventory=balisong)
+            boots_inventory=g_boots, first_weapon_inventory=js_max_weapon, second_weapon_inventory=js_max_weapon)
