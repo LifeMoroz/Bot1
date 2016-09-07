@@ -56,8 +56,8 @@ js_max_set = Set(band=(18, 5, 4), head_inventory=js_max_helmet, torso_inventory=
 js_max_light_set = Set(band=(17, 5, 2), head_inventory=js_max_helmet, torso_inventory=js_max_body, pants_inventory=js_max_legs,
                        boots_inventory=js_max_boots, first_weapon_inventory=js_light_weapon, second_weapon_inventory=js_light_weapon)
 
-apower_set = Set(band=(18, 5, 4), head_inventory=js_max_helmet, torso_inventory=power_max_body, pants_inventory=power_max_legs,
-                 boots_inventory=js_max_boots, first_weapon_inventory=justice_ring, second_weapon_inventory=justice_ring)
+apower_set = Set(band=(18, 5, 4), head_inventory=apower_max_helmet, torso_inventory=apower_max_body, pants_inventory=apower_max_legs,
+                 boots_inventory=apower_max_boots, first_weapon_inventory=assasin_knife, second_weapon_inventory=assasin_knife)
 
 power_set = Set(band=(18, 5, 4), head_inventory=power_max_helmet, torso_inventory=power_max_body, pants_inventory=power_max_legs,
                 boots_inventory=power_max_boots, first_weapon_inventory=justice_ring, second_weapon_inventory=justice_ring)
