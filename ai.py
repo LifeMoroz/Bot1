@@ -1,6 +1,6 @@
 import time
 
-from api import get, get_best_offer
+from api import get, get_best_offer, raw_get
 from log import debug
 
 LONGPOLLING_TIMEOUT = 25
@@ -74,14 +74,14 @@ def simulate():
 
 
 def go_buisness():
-    get("http://api.vircities.com/app/scripts/views/business.js")
-    get("http://api.vircities.com/app/scripts/templates/business.tmpl")
-    get("http://api.vircities.com/app/scripts/templates/business/blocks/company-element.tmpl")
-    get("http://api.vircities.com/app/scripts/views/common/lazy-loading-view.js")
-    get("http://api.vircities.com/app/scripts/views/components/lazy-loading.js")
-    get("http://api.vircities.com/app/scripts/views/common/list-view.js")
-    get("http://api.vircities.com/app/bower_components/velocity/velocity.js")
-    get("http://api.vircities.com/app/bower_components/velocity/velocity.ui.js")
+    raw_get("http://api.vircities.com/app/scripts/views/business.js")
+    raw_get("http://api.vircities.com/app/scripts/templates/business.tmpl")
+    raw_get("http://api.vircities.com/app/scripts/templates/business/blocks/company-element.tmpl")
+    raw_get("http://api.vircities.com/app/scripts/views/common/lazy-loading-view.js")
+    raw_get("http://api.vircities.com/app/scripts/views/components/lazy-loading.js")
+    raw_get("http://api.vircities.com/app/scripts/views/common/list-view.js")
+    raw_get("http://api.vircities.com/app/bower_components/velocity/velocity.js")
+    raw_get("http://api.vircities.com/app/bower_components/velocity/velocity.ui.js")
     time.sleep(1)
 
 
@@ -112,6 +112,3 @@ def check_resources(min_sum=MIN_OFFER):
                 interesting_offers[resource['id']] = buy_price
     return interesting_offers
 
-
-def check_buisness():
-    go_buisness()

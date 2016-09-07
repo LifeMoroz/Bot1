@@ -7,8 +7,12 @@ from exceptions import RequestError
 __author__ = 'ruslan_galimov'
 
 
+def raw_get(url):
+    return requests.get(url + "?os=unknown&v=3.10", headers=HEADERS).content.decode("utf-8")
+
+
 def get(url, decode=False):
-    data = json.loads(requests.get(url + "?os=unknown&v=3.10", headers=HEADERS).content.decode("utf-8"))
+    data = json.loads(raw_get(url))
     if data.get('setFlash') and (data['setFlash'][0].get('class') is None or data['setFlash'][0]['class'] != 'flash_success'):
         warn(data)
         raise RequestError
@@ -100,3 +104,19 @@ def get_best_offer(item_id, min_n=0, min_sum=0):
 
 def short_info():
     return get("http://api.vircities.com/users/short_infos.json", decode=True)
+
+
+def company_list(page=1):
+    return get("http://api.vircities.com/companies/user_companies_list/page:{}.json".format(page), decode=True)
+
+
+def company_info(item_id):
+    return get("http://api.vircities.com/companies/info/{}.json".format(item_id), decode=True)
+
+
+def company_effects(item_id):
+    return get("http://api.vircities.com/companies/effects/{}.json".format(item_id), decode=True)
+
+
+def company_items(item_id):
+    return get("http://api.vircities.com/company_items/storage/{}.json".format(item_id), decode=True)

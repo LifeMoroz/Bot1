@@ -1,6 +1,8 @@
 import time
 
 import api
+from ai import go_buisness
+from business import BusinessPage
 from exceptions import NoEnergyError
 from log import debug, warn
 from sets import ItemType, UserItem, Equipment
@@ -248,3 +250,12 @@ class User(object):
 
     def has_set(self, set):
         return self.inventory.has_set(set)
+
+    def business(self):
+        go_buisness()
+        page = BusinessPage.first()
+        print([obj.name for obj in page.objects])
+        page = page.next_page()
+        print([obj.name for obj in page.objects])
+        page = page.prev_page()
+        print([obj.name for obj in page.objects])
