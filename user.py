@@ -214,7 +214,10 @@ class User(object):
         spend = None
         if not self.inventory.is_fitted(set):
             if not self.inventory.has_set(set):
-                spend = set.buy()
+                if len(self.inventory.storage) < 20 - len(set.items()):
+                    spend = set.buy()
+                else:
+                    raise Exception("Inventory full")
                 self.update_inventory()
             self.inventory.fit(set)
 
