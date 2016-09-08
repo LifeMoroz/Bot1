@@ -36,8 +36,8 @@ if __name__ == '__main__':
     # print(check_resources())
     user = User()
     # user.business()
-    # set = set_instances.g_set
-    user._farm(*set.band, count=5)
+    set = set_instances.js_max_set
+    user._farm(*set.band, count=10)
     while user.energy > set.get_max_strength() * 5:
         user.farm(set)
     # calculate()
