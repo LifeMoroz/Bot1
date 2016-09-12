@@ -1,5 +1,7 @@
 import json
 import requests
+import time
+
 from local_settings import HEADERS, POST_HEADERS
 from log import warn
 from exceptions import RequestError
@@ -72,7 +74,7 @@ def fight(band_id, complexity, rank):
         "http://api.vircities.com/military/pve/gangs/{band_id}/{complexity}/ranks/{rank}/fight".format(
             band_id=band_id, complexity=complexity, rank=rank), data={}, decode=True)
     get("http://api.vircities.com/military/info")
-    get("http://api.vircities.com/military/pve/gangs/13")
+    get("http://api.vircities.com/military/pve/gangs/{}".format(band_id))
     return data
 
 

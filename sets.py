@@ -54,8 +54,8 @@ class ItemType(metaclass=ItemTypeMeta):
         spend = 0
         bought = 0
         if not offer:
-            warn("No such items ", self.name)
-            raise NoSuchItem
+            warn("No such items", self.name)
+            raise NoSuchItem("No such items {}".format(self.name))
         while bought < quantity:
             try:
                 _buy = offer['number'] if offer['number'] < quantity else quantity
@@ -207,3 +207,11 @@ class Set(Equipment):
     @property
     def op_cost(self):
         return sum([float(item.produce_hours) for _name, item in self.items() if item is not None])
+
+    def __add__(self, other):  # TODO: check it
+        new_set = Set(band=self.band, align=self.align, **self._items)
+        if isinstance(other, Set):
+            for k, v in other._items:
+                if v is not None:
+                    new_set._items[k] = v
+        return new_set

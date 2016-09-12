@@ -33,7 +33,7 @@ class Inventory(object):
         self.equipment = None
         self.storage = self.get_storage()
 
-    def get_storage(self, short_info=None):
+    def get_storage(self, short_info=None, **kwargs):
         self.equipment = UserEquipment()
         if short_info:
             equipped_items = short_info['equippedItems']
@@ -214,14 +214,14 @@ class User(object):
         spend = None
         if not self.inventory.is_fitted(set):
             if not self.inventory.has_set(set):
-                if len(self.inventory.storage) < 20 - len(set.items()):
+                if 20 - len(self.inventory.storage) > len(set.items()):
                     spend = set.buy()
                 else:
                     raise Exception("Inventory full")
                 self.update_inventory()
             self.inventory.fit(set)
 
-        self.update_inventory()
+        self.update_inventory(no_cache=True)
         if not self.inventory.check_set(set) and not set.align:
             warn("Check strength of items in set")
             return
@@ -245,8 +245,8 @@ class User(object):
 
         self.update_inventory()
 
-    def update_inventory(self):
-        self.inventory.storage = self.inventory.get_storage()
+    def update_inventory(self, **kwargs):
+        self.inventory.storage = self.inventory.get_storage(**kwargs)
 
     def unfit(self, set=None):
         self.inventory.unfit(set)
